@@ -13,7 +13,105 @@ body {
     overflow-x: hidden;
 }
 
-/* --- Seção Sobre --- */
+/* Navbar */
+.navbar {
+    background-color: #1f5f2a;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    height: 70px;
+    width: auto;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    opacity: 0;
+    animation: fadeInDown 1s ease forwards;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease forwards;
+    animation-delay: 0.3s;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-links li a:hover {
+    background: #fff;
+    color: #1f5f2a;
+    transform: scale(1.05);
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 26px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Banner */
+.banner {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url('background.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    animation: zoomBackground 12s ease-in-out infinite alternate;
+}
+
+.titulo {
+    color: #aee89f;
+    font-size: 3rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    animation: fadeInUp 1.2s ease forwards;
+    animation-delay: 0.5s;
+}
+
+.sub_titulo {
+    color: #c7f5b8;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    line-height: 1.4;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    animation: fadeInUp 1.2s ease forwards;
+    animation-delay: 1s;
+}
+
+/* Sobre */
 .sobre {
     padding: 60px 10%;
     background: #f9f9f9;
@@ -70,112 +168,19 @@ body {
     font-size: 1.2rem;
     margin-bottom: 10px;
     color: #1f5f2a;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.card h3 i {
+    color: #1f5f2a;
+    font-size: 1.2rem;
 }
 
 .card p {
     font-size: 1rem;
     color: #444;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .secao-titulo {
-        font-size: 1.6rem;
-    }
-
-    .descricao {
-        font-size: 1rem;
-    }
-}
-
-
-/* Navbar */
-.navbar {
-    background-color: #1f5f2a;
-    padding: 15px 5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
-
-.logo a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 28px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    opacity: 0;
-    animation: fadeInDown 1s ease forwards;
-}
-
-/* Menu links */
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 15px;
-    opacity: 0;
-    animation: fadeIn 1.5s ease forwards;
-    animation-delay: 0.3s;
-}
-
-.nav-links li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
-    padding: 8px 12px;
-    border-radius: 6px;
-    transition: 0.3s ease-in-out;
-}
-
-.nav-links li a:hover {
-    background: #fff;
-    color: #1f5f2a;
-    transform: scale(1.05);
-}
-
-/* Botão hambúrguer */
-.menu-toggle {
-    display: none;
-    font-size: 28px;
-    color: #fff;
-    cursor: pointer;
-}
-
-/* Banner */
-.banner {
-    height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url('background.jpg') center/cover no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0 20px;
-    animation: zoomBackground 12s ease-in-out infinite alternate;
-}
-
-.titulo {
-    color: #aee89f;
-    font-size: 3rem;
-    font-weight: 600;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
-    opacity: 0;
-    animation: fadeInUp 1.2s ease forwards;
-    animation-delay: 0.5s;
-}
-
-.sub_titulo {
-    color: #c7f5b8;
-    font-size: 1.5rem;
-    margin-top: 10px;
-    line-height: 1.4;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
-    opacity: 0;
-    animation: fadeInUp 1.2s ease forwards;
-    animation-delay: 1s;
 }
 
 /* Footer */
