@@ -3,7 +3,7 @@
 
 <!-- Página inicial -->
 <url>
-    <loc>https://bf-agricola.vercel.app/</loc>
+    <loc>https://bfagricola.vercel.app/</loc>
     <lastmod>2025-08-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -11,7 +11,7 @@
 
 <!-- Seção Sobre -->
 <url>
-    <loc>https://bf-agricola.vercel.app/#sobre</loc>
+    <loc>https://bfagricola.vercel.app/#sobre</loc>
     <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
